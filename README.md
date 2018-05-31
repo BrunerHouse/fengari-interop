@@ -1,3 +1,15 @@
+# Why to fork?
+
+We needed to fork because the "version" we were using (0.0.1 or even earlier) had `fengari` as a dependency (not as a devDependency like in the latest version as of now), this was causing problems like: Our frontend depends on our lib which depends on interop, which depends on fengari.
+
+Although we could use yarn to force the fengari version to the old one we needed, when the interop code executed was using the incorrect (latest) fengari version.
+
+We are trying to solve that by branching the desired version of interop and set fengari as devDependency or fix there the desired verison of fengari.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
 [![Build Status](https://travis-ci.org/fengari-lua/fengari-interop.svg?branch=master)](https://travis-ci.org/fengari-lua/fengari-interop)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![#fengari on Freenode](https://img.shields.io/Freenode/%23fengari.png)](https://webchat.freenode.net/?channels=fengari)
