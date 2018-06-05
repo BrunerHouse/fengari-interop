@@ -18,7 +18,7 @@
 	},
 	"homepage": "https://github.com/fengari-lua/fengari-interop",
 	"dependencies": {
-		"fengari": "fengari-lua/fengari#a5d5b5f695ad557e25911f08be2d132ab1be658c"
+		"fengari": "BrunerHouse/fengari#v0.0.1-bh"
 	},
 	"main": "src/jslib.js",
 	"directories": {
